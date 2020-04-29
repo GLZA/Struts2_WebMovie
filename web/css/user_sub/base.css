@@ -1,0 +1,241 @@
+@charset "utf-8";
+.quick_menu > li {
+	display: inline-block;
+	position: relative;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.quick_menu a,
+	.quick_menu a:hover{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.quick_menu > li:hover .user_fun_sub {
+	opacity:1;
+	-webkit-animation: turn 2s ease-in-out;
+	-moz-animation: turn 2s ease-in-out;
+	-ms-animation: turn 2s ease-in-out;
+	animation: turn 2s ease-in-out;
+	visibility: visible;
+}
+.user_icon img {
+	width: 40px;
+	height: 40px;
+	border:  1px solid #fff;
+	border-radius: 3px;
+	vertical-align: middle;
+}
+.user_icon b {
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	display: inline-block;	
+	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	padding: 2px 5px;
+	line-height: 12px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background-color: #ff8400;
+
+}
+.user_fun b {
+	position: absolute;
+	top: 8px;
+	padding-left: 2px;
+	font-weight: normal;
+	font-size: 22px;
+}
+.user_fun_sub {
+	position: absolute;
+	text-align: left;
+	line-height: 30px;
+	width: 125px;
+	padding: 5px 0;
+	border-radius: 5px;
+	background-color: #001013;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+.user_fun_sub a {
+	display: block;
+	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+	margin: 2px 5px 2px 5px;
+	padding-left:5px;
+}
+.user_fun_sub a:hover {
+	border-radius: 3px;
+	box-shadow: 0 1px 0 #82c64f inset;
+	background-color: #4daf04;
+}
+.log_out a {
+	display: block;
+	line-height: 15px;
+	padding: 5px 20px;
+	margin-left: 40px;
+	border: 1px solid #33707b;
+	border-radius: 3px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.log_out a:hover {
+	text-shadow: 0 0 20px rgba(255,255,255,.9);
+}
+
+@-webkit-keyframes turn {
+	0%{
+		-webkit-transform: rotateX(90deg);
+	}
+	20%{
+		-webkit-transform: rotateX(-30deg) rotateY(10deg);
+	}
+	35%{
+		-webkit-transform: rotateX(20deg) rotateY(-3deg);
+	}
+	55%{
+		-webkit-transform: rotateX(-15deg) rotateY(8deg);
+	}
+	85%{
+		-webkit-transform: rotateX(20deg) rotateY(-2deg);
+	}
+	100%{
+		-webkit-transform: rotateX(0);
+	}
+}
+@-moz-keyframes turn {
+	0%{
+		-moz-transform: rotateX(90deg);
+	}
+	20%{
+		-moz-transform: rotateX(-30deg) rotateY(10deg);
+	}
+	35%{
+		-moz-transform: rotateX(20deg) rotateY(-3deg);
+	}
+	55%{
+		-moz-transform: rotateX(-15deg) rotateY(8deg);
+	}
+	85%{
+		-moz-transform: rotateX(20deg) rotateY(-2deg);
+	}
+	100%{
+		-moz-transform: rotateX(0);
+	}
+}
+@-ms-keyframes turn {
+	0%{
+		-ms-transform: rotateX(90deg);
+	}
+	20%{
+		-ms-transform: rotateX(-30deg) rotateY(10deg);
+	}
+	35%{
+		-ms-transform: rotateX(20deg) rotateY(-3deg);
+	}
+	55%{
+		-ms-transform: rotateX(-15deg) rotateY(8deg);
+	}
+	85%{
+		-ms-transform: rotateX(20deg) rotateY(-2deg);
+	}
+	100%{
+		-ms-transform: rotateX(0);
+	}
+}
+@keyframes turn {
+	0%{
+		transform: rotateX(90deg);
+	}
+	20%{
+		transform: rotateX(-30deg) rotateY(10deg);
+	}
+	35%{
+		transform: rotateX(20deg) rotateY(-3deg);
+	}
+	55%{
+		transform: rotateX(-15deg) rotateY(8deg);
+	}
+	85%{
+		transform: rotateX(20deg) rotateY(-2deg);
+	}
+	100%{
+		transform: rotateX(0);
+	}
+}
+.page{
+    text-align:left;
+	padding-top:40px;
+}
+.wrap_top_nav{
+    background-color:#333;
+	box-shadow:0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+	height:40px;
+}
+
+#top_nav{
+    width:1000px;
+	margin:0 auto;
+	position:relative;
+}
+#top_nav a{
+    font-size:16px;
+	line-height:40px;
+	float:left;
+	margin-right:20px;
+	color:#999;
+	text-decoration:none;
+}
+#top_nav a:hover{
+    color:#fff;
+}
+#top_nav li:nth-child(1) a{
+    background-image:url(http://www.w3cplus.com/sites/all/themes/marvin/logo.png);
+	background-position: 0 -12px;
+    background-repeat: no-repeat;
+    background-size: 68px 60px;
+	padding-left:74px;
+	color:#fff;
+	width:74px;
+	overflow:hidden;
+}
+#read{
+    position:absolute;
+	right:0;
+	top:0;
+	font-family:'ËÎÌו';
+}
+#header{
+    text-align:center;
+}
+#header .white{
+    color:#fff;
+}
+#header .blank{
+    color:#444;
+}
+#header h1{
+    font-size:24px;
+}
+#header h2{
+	font-weight:normal;
+}
+#ad_w3cplus {
+	width: 750px;
+	margin: 100px auto;
+	text-align: center;
+}
+#ad_w3cplus .grid-ad {
+ float:left;
+}
+#user_fun_sub li{
+	list-style:none;
+}

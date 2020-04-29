@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+		"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!--
+		配置顺序——————
+		result-types
+		interceptors
+		default-interceptor-ref
+		default-action-ref
+		default-class-ref
+		global-results
+		global-exception-mappings
+		action*
+	-->
+	<package name="default" namespace="/" extends="struts-default" >
+
+		<!-- 注册拦截器 -->
+		<interceptors>
+			<interceptor name="mytimerIc" class="com.pili.interceptor.TimerInterceptor"></interceptor>
+			<interceptor name="auth" class="com.pili.interceptor.AuthInterceptor"></interceptor>
+			<!-- 拦截器栈 -->
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="auth"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+
+
+		<action name="auth">
+			<interceptor-ref name="myStack"></interceptor-ref>
+			<result>/WEB-INF/manager/Authindex.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+
+
+
+		<action name="mv_*" class="com.pili.action.MvEditAction" method="{1}">
+			<result type="redirectAction">
+				<!-- Action名参数 -->
+				<param name="actionName">auth</param>
+				<!-- 参数名 -->
+				<param name="error">${err}</param>
+				<param name="cs1">upload</param>
+				<param name="cs2">fourth</param>
+				<param name="cs3">four</param>
+				<param name="type">1</param>
+				<!-- 命名 空间参数 -->
+				<param name="namespace">/</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="UpLoad" extends="struts-default" namespace="/">
+		<action name="uploads" class="com.pili.action.UploadAction">
+
+			<!--
+				指定（限制）上传文件的类型，定义局部拦截器，修改默认拦截器的属性
+				"fileUpload.maximumSize" ：限制上传最大的文件大小。
+				"fileUpload.allowedTypes"：允许上传文件的类型。
+				"fileUpload.allowedExtensions"：允许上传文件的可扩展文件类型
+			-->
+			<interceptor-ref name="defaultStack">
+				<param name="fileUpload.maximumSize">500000000</param>
+				<param name="fileUpload.allowedExtensions">mp4,jpg</param>
+			</interceptor-ref>
+
+			<result type="redirectAction">
+				<!-- Action名参数 -->
+				<param name="actionName">auth</param>
+				<!-- 参数名 -->
+				<param name="Err">${err}</param>
+				<param name="cs1">upload</param>
+				<param name="cs2">fourth</param>
+				<param name="cs3">four</param>
+				<!-- 命名 空间参数 -->
+				<param name="namespace">/</param>
+			</result>
+			<!-- 出现错误自动会返回input结果，进入结果视图 -->
+			<result name="error" type="redirectAction">
+				<!-- Action名参数 -->
+				<param name="actionName">auth</param>
+				<!-- 参数名 -->
+				<param name="Err">${err}</param>
+				<param name="cs1">upload</param>
+				<param name="cs2">fourth</param>
+				<param name="cs3">four</param>
+				<!-- 命名 空间参数 -->
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="updateInfo" class="com.pili.action.ChangeUserInfoAction" method="updateUserInfo">
+			<result type="redirectAction">
+				<!-- Action名参数 -->
+				<param name="actionName">auth</param>
+				<!-- 参数名 -->
+				<param name="cs1">pim</param>
+				<param name="cs2">first</param>
+				<param name="cs3">one</param>
+				<!-- 命名 空间参数 -->
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="exit" class="com.pili.action.ExitAction">
+			<result name="success">/index.jsp</result>
+		</action>
+	</package>
+
+
+	<package name="jsonAction" namespace="/" extends="json-default">
+
+		<action name="jsonVd_*" class="com.pili.json.JsonAction" method="{1}">
+
+			<result name="success" type="json"></result>
+
+		</action>
+
+		<action name="showMovieAction" class="com.pili.json.MovieAction" method="showMovie">
+			<result name="success" type="json">
+				<param name="root">json</param>
+			</result>
+		</action>
+
+	</package>
+
+</struts>

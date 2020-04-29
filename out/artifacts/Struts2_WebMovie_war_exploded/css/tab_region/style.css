@@ -1,0 +1,36 @@
+#tab_region{
+	padding-top: 30px;
+	height: auto;
+	float: left;
+	width: 67.5rem;
+}
+.content {
+	color: black;
+    max-width: 67.5rem;
+	height: auto;
+    margin: auto;
+    padding: 0 15px;
+}
+.Allmovie{
+	float: left;
+	 width:208px;
+	 height:220px;
+}
+.Alltitle{
+	float:left;
+	width:200px;
+	height:52px;
+	padding-left:8px;
+	padding-top: 8px;
+    line-height: 20px;
+    transition: all .2s linear;
+    color: #222;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    text-align: left;
+}
+.Alltitle:hover{
+	color:#215393;
+	text-decoration:underline;
+}

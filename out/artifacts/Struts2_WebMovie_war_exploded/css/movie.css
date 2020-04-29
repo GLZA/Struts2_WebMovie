@@ -1,0 +1,216 @@
+.icon {
+	position: relative;
+	width: 32px;
+	height: 32px;
+	display: block;
+	fill: rgba(51, 51, 51, 0.5);
+	margin-left: 5px; -webkit-transition : all .2s ease-out;
+	transition: all .2s ease-out;
+	-webkit-transition: all .2s ease-out;
+}
+
+.icon.active {
+	fill: #E74C3C;
+}
+
+.icon.big {
+	width: 64px;
+	height: 64px;
+	fill: rgba(51, 51, 51, 0.5);
+}
+
+#moive {
+	height: 570px;
+	float: left;
+	width: 100%;
+	padding-top: 15px;
+}
+
+#moive #view {
+	height: 570px;
+	width: 94%;
+	margin: auto;
+}
+
+#videoBox {
+	position: relative;
+	float: left;
+	transition: 0.7s;
+}
+
+#videoBox #video-title {
+	position: absolute;
+	top: 0px;
+	z-index: 200;
+	width: 100%;
+	background-color: #001013;
+	height: 60px;
+}
+
+#videoBox #video-title span {
+	float: left;
+	width: 50%;
+	margin-left: 25px;
+	padding-top: 15px;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+}
+
+#vedioBar {
+	float: left;
+	width: 100%;
+}
+
+#vedioBar #vedioBar-list {
+	border-width: 0px 2px 2px 2px;
+	margin: 0 auto;
+	border-radius: 4px;
+	text-align: left;
+	-webkit-box-shadow: 0 0 8px #e5e9ef;
+	box-shadow: 0 0 8px #e5e9ef;
+	white-space: nowrap;
+	height: 50px;
+	padding-top: 15px;
+	width: 94%;
+}
+
+#vedioBar #vedioBar-list ul {
+	margin: 0;
+	padding-left: 30px; width : 450px;
+	height: 50px;
+	width: 100%;
+}
+
+#vedioBar #vedioBar-list ul li {
+	align-items: center;
+	width: 70px;
+	line-height: 34px;
+	align-items: center;
+	color: rgba(51, 51, 51, 0.5);
+	font-weight: 500;
+	cursor: pointer;
+	margin-left: 15px;
+	float: left;
+	-webkit-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+#vedioBar #vedioBar-list ul li:hover {
+	color: #E74C3C;
+	-webkit-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+}
+
+#vedioBar #vedioBar-list ul li:hover>.icon {
+	fill: #E74C3C;
+}
+
+#vedioBar #vedioBar-list span {
+	float: left;
+}
+
+#vedioBar #vedioBar-list div {
+	float: left;
+}
+#Post{
+	padding-left: 220px;
+}
+#postway:focus {
+	outline: none;
+}
+
+#way {
+	height: 33px;
+	width: 250px;
+	align-items: center;
+}
+
+#way .input {
+	border: 1px solid #999999;
+	height: 100%;
+}
+
+#way .input .clear {
+	width: 30px;
+	height: 35px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	padding-right: 10px;
+	visibility: hidden;
+	opacity: 0.8;
+	color: gray;
+}
+
+#way input[type=text] {
+	height: 100%;
+	border: 0px;
+	width: 200px;
+	float: left;
+}
+
+#way div {
+	float: left;
+}
+
+#way>button {
+	width: 100px;
+	height: 35px;
+	background: #3385ff;
+	color: #fff;
+	border: none;
+}
+
+video {
+	max-height: 570px;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+#videoBox.in {
+	transition: 0.5s;
+	width: 100%;
+	vertical-align: bottom;
+}
+
+@
+keyframes an { 0% {
+	opacity: 0;
+}
+
+25%
+{
+opacity
+:
+0
+.5
+;
+}
+50%
+{
+opacity
+:
+0
+.7
+;
+}
+100%
+{
+opacity
+:
+1;
+}
+}
+#video-title.out {
+	opacity: 0.2;
+}
+
+#videoBox.out {
+	position: fixed;
+	overflow: hidden;
+	right: 65px;
+	width: 300px;
+	z-index: 999;
+	animation: an 0.5s;
+}

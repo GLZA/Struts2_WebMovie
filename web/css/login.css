@@ -1,0 +1,76 @@
+body{
+	background: #ddd;
+	font-family: Consolas;
+	margin: 0 0;
+	color: white;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ol, ul,li {
+	list-style: none;
+}
+#full {
+	width: 30%;
+	/*box-shadow: 10px 10px 5px #888888;*/
+	border-radius: 20px;
+	/*border: 1px #24292E solid;*/
+	margin: 100px auto;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+
+header {
+	height: 90px;
+	background-color: #24292E;
+	border-radius: 20px 20px 0 0;
+	z-index: 999;
+	position: relative;
+}
+header #name {
+	font-size: 1.00rem;
+	font-weight: bold;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	width: 3.75rem;
+}
+
+header #icon {
+	margin-top: 0.9rem;
+	margin-right: 0.3125rem;
+	margin-left: 2.25rem;
+	width: 3.125rem;
+	height: 3.125rem;
+	float: left;
+}
+#body {
+	color: black;
+	background-color: #FFFFFF;
+}
+
+footer {
+	float:bottom;
+	height: 90px;
+	background-color: #24292E;
+	border-radius: 0 0 20px 20px;
+}
+
+footer div {
+	height: 90px;
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+}
+
+footer #blogroll {
+	float: right;
+	margin-right: 10px;
+}

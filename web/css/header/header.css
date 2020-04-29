@@ -1,0 +1,65 @@
+header {
+	height: 80px;
+	background-color: #24292E;
+	border-radius: 20px 20px 0 0;
+	z-index: 999;
+	position: relative;
+}
+.header_float{
+	min-width: 1080px;
+	height: 80px;
+	background-color: #24292E;
+	opacity:0.85;
+	border-radius:0 0 20px 20px ;
+	box-shadow: 0px 28px 50px rgba(25,24,40,0.35);
+	position: fixed;
+	top: 0;
+	z-index:999;
+	display: none;
+}
+header #title {
+	width: 10rem;
+	height: 5rem;
+	float: left;
+}
+header #title a{
+	color:white;
+}
+header #name {
+	font-size: 1.00rem;
+	font-weight: bold;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: left;
+	width: 3.75rem;
+}
+
+header #icon {
+	margin-top: 0.9rem;
+	margin-right: 0.3125rem;
+	margin-left: 2.25rem;
+	width: 3.125rem;
+	height: 3.125rem;
+	float: left;
+}
+header #search {
+	position: relative;
+	width: 34.375rem;
+	height: 5rem;
+	float: left;
+}
+
+header #info {
+	padding-top:1.25rem;
+	padding-left: 1.25rem;
+	padding-right: 1rem;
+	float: left;
+	width: 20.875rem;
+	height: 3.75rem;
+	margin:0;
+}
+header #info .quick_menu{
+	float: right;
+}

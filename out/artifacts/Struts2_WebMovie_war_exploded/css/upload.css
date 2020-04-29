@@ -1,0 +1,46 @@
+.auth-form{
+	padding-top:80px;
+	margin: 0 auto;
+}
+.upload-item{
+	padding: 2px 8px;
+	border:1px solid #dedede;
+	border-radius: 8px;
+	margin-top: 30px;
+	width:400px;
+}
+.upload_input{
+	height: 35px;
+    border: none;
+    line-height: 35px;
+    width: 260px;
+    font-size: 14px;
+    outline: none;
+    
+}
+.upload_input option{
+	text-align: center;
+}
+.upload-sub{
+	text-align: center;
+}
+.upload-sub input{
+	margin-top:15px;
+    background: #45B549;
+    line-height: 35px;
+    width: 150px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.upload-item .error{
+	color: #F00;
+}
+#msg{
+	width: 100%;
+	margin-top: 20px;
+	color: #F00;
+	text-align: center;
+}
