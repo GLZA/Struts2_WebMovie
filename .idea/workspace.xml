@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95e257f2-6e35-4902-97e8-03dfcf5ec6e0" name="Default Changelist" comment="" />
+    <list default="true" id="95e257f2-6e35-4902-97e8-03dfcf5ec6e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,6 +180,7 @@
       <workItem from="1587530185980" duration="522000" />
       <workItem from="1587530722989" duration="5040000" />
       <workItem from="1588130332268" duration="122000" />
+      <workItem from="1588474563071" duration="25000" />
     </task>
     <servers />
   </component>
@@ -197,10 +200,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="254" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1587530833772" />
-    <state x="360" y="27" key="CommitChangelistDialog2" timestamp="1588130570813">
+    <state x="360" y="27" key="CommitChangelistDialog2" timestamp="1588130618525">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="360" y="27" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588130570813" />
+    <state x="360" y="27" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1588130618525" />
     <state x="192" y="200" key="FileChooserDialogImpl" timestamp="1587533314432">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -257,10 +260,14 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="-108" y="14" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1587533384779" />
-    <state x="492" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1588130332021">
+    <state x="392" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588130628417">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="492" y="260" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1588130332021" />
+    <state x="392" y="153" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1588130628417" />
+    <state x="492" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1588474576419">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="492" y="260" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1588474576419" />
     <state x="174" y="45" key="new project wizard" timestamp="1587545292187">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
